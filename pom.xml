@@ -8,6 +8,22 @@
   <version>1.0-SNAPSHOT</version>
   <name>jdbi-folder</name>
 
+    <repositories>
+        <repository>
+            <id>internal</id>
+            <name>Artifactory Managed Internal Repository</name>
+            <url>http://172.16.20.240:8080/artifactory/libs-release-local</url>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>internal</id>
+            <url>http://172.16.20.240:8080/artifactory/libs-release-local</url>
+        </repository>
+    </distributionManagement>
+
+
     <dependencies>
         <dependency>
             <groupId>org.jdbi</groupId>
